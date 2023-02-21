@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>7863da96-0c4f-4268-8522-a23bf2bc2d67</ID>
+  <ModName>Caravan Cooler (Continued)</ModName>
+  <Version>1.4.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>CaravanCooler</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
+
+
+
+

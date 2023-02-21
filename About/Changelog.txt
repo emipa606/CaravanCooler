@@ -1,0 +1,4 @@
+# Changelog for CaravanCooler
+
+1.4.0 - First publish
+
