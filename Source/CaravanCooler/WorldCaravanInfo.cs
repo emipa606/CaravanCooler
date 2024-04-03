@@ -5,8 +5,8 @@ using Verse;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(DaysUntilRotCalculator))]
-[HarmonyPatch("ApproxDaysUntilRot", typeof(List<Thing>), typeof(int), typeof(WorldPath), typeof(float), typeof(int))]
+[HarmonyPatch(typeof(DaysUntilRotCalculator), nameof(DaysUntilRotCalculator.ApproxDaysUntilRot), typeof(List<Thing>),
+    typeof(int), typeof(WorldPath), typeof(float), typeof(int))]
 public static class WorldCaravanInfo
 {
     [HarmonyPostfix]

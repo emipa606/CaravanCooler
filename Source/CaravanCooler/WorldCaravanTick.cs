@@ -6,12 +6,11 @@ using Verse;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(Caravan))]
-[HarmonyPatch("Tick")]
+[HarmonyPatch(typeof(Caravan), nameof(Caravan.Tick))]
 public static class WorldCaravanTick
 {
     [HarmonyPostfix]
-    private static void SetRotValuesToZero(Caravan __instance)
+    private static void Postfix(Caravan __instance)
     {
         if (!CaravanCooler.HasCoolerInListOfThings(__instance.AllThings.ToList()))
         {

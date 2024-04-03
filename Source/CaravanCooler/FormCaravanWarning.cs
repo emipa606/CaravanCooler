@@ -3,8 +3,7 @@ using RimWorld;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(Dialog_FormCaravan))]
-[HarmonyPatch("MostFoodWillRotSoon", MethodType.Getter)]
+[HarmonyPatch(typeof(Dialog_FormCaravan), "MostFoodWillRotSoon", MethodType.Getter)]
 public static class FormCaravanWarning
 {
     [HarmonyPostfix]

@@ -5,5 +5,5 @@ namespace CaravanCooler;
 
 public class CaravanInfo
 {
-    public static List<TransferableOneWay> transferables = new List<TransferableOneWay>();
+    public static List<TransferableOneWay> transferables = [];
 }

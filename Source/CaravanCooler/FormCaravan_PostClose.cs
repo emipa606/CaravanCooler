@@ -3,8 +3,7 @@ using RimWorld;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(Dialog_FormCaravan))]
-[HarmonyPatch("PostClose")]
+[HarmonyPatch(typeof(Dialog_FormCaravan), nameof(Dialog_FormCaravan.PostClose))]
 public static class FormCaravan_PostClose
 {
     public static void Postfix()

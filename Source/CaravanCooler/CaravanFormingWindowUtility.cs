@@ -4,8 +4,7 @@ using Verse;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(CaravanUIUtility))]
-[HarmonyPatch("GetDaysWorthOfFoodLabel")]
+[HarmonyPatch(typeof(CaravanUIUtility), "GetDaysWorthOfFoodLabel")]
 public static class CaravanFormingWindowUtility
 {
     [HarmonyPostfix]
