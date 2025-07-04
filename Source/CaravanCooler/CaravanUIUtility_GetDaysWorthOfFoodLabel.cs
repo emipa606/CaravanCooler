@@ -5,10 +5,9 @@ using Verse;
 namespace CaravanCooler;
 
 [HarmonyPatch(typeof(CaravanUIUtility), "GetDaysWorthOfFoodLabel")]
-public static class CaravanFormingWindowUtility
+public static class CaravanUIUtility_GetDaysWorthOfFoodLabel
 {
-    [HarmonyPostfix]
-    public static void ReplaceFoodRotInfo(Pair<float, float> daysWorthOfFood, ref string __result)
+    public static void Postfix(Pair<float, float> daysWorthOfFood, ref string __result)
     {
         if (daysWorthOfFood is { First: < 600f, Second: < 600f } &&
             daysWorthOfFood.Second < daysWorthOfFood.First &&

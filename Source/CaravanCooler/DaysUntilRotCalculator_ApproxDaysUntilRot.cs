@@ -6,11 +6,10 @@ using Verse;
 namespace CaravanCooler;
 
 [HarmonyPatch(typeof(DaysUntilRotCalculator), nameof(DaysUntilRotCalculator.ApproxDaysUntilRot), typeof(List<Thing>),
-    typeof(int), typeof(WorldPath), typeof(float), typeof(int))]
-public static class WorldCaravanInfo
+    typeof(PlanetTile), typeof(WorldPath), typeof(float), typeof(int))]
+public static class DaysUntilRotCalculator_ApproxDaysUntilRot
 {
-    [HarmonyPostfix]
-    public static void NoRotIfCoolerPresent(List<Thing> potentiallyFood, ref float __result)
+    public static void Postfix(List<Thing> potentiallyFood, ref float __result)
     {
         if (CaravanCooler.HasCoolerInListOfThings(potentiallyFood))
         {

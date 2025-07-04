@@ -6,10 +6,9 @@ using Verse;
 
 namespace CaravanCooler;
 
-[HarmonyPatch(typeof(Caravan), nameof(Caravan.Tick))]
-public static class WorldCaravanTick
+[HarmonyPatch(typeof(Caravan), "TickInterval")]
+public static class Caravan_TickInterval
 {
-    [HarmonyPostfix]
     private static void Postfix(Caravan __instance)
     {
         if (!CaravanCooler.HasCoolerInListOfThings(__instance.AllThings.ToList()))

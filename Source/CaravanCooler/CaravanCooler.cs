@@ -11,13 +11,7 @@ public class CaravanCooler
 {
     static CaravanCooler()
     {
-        var harmony = new Harmony("com.github.toywalrus.caravancooler");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
-    }
-
-    public static bool WillFoodRot(List<TransferableOneWay> items)
-    {
-        return !HasCoolerInTransferableItems(items);
+        new Harmony("com.github.toywalrus.caravancooler").PatchAll(Assembly.GetExecutingAssembly());
     }
 
     public static bool HasCoolerInTransferableItems(List<TransferableOneWay> items)
