@@ -8,6 +8,6 @@ public static class FormCaravan_EachFrame
 {
     public static void Postfix(Dialog_FormCaravan __instance)
     {
-        CaravanInfo.transferables = [..__instance.transferables];
+        CaravanInfo.transferables = [.. __instance.transferables];
     }
 }

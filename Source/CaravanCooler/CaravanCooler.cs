@@ -7,7 +7,7 @@ using Verse;
 namespace CaravanCooler;
 
 [StaticConstructorOnStartup]
-public class CaravanCooler
+public static class CaravanCooler
 {
     static CaravanCooler()
     {

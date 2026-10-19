@@ -3,4 +3,17 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="CaravanCooler/CaravanCooler.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/CoolerResearchDef.xml" />
+    <File Path="../1.7/Defs/CoolerThingDef.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/ResearchTabPositioningPatch.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>

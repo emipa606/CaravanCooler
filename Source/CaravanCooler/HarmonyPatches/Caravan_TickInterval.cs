@@ -20,10 +20,7 @@ public static class Caravan_TickInterval
         foreach (var thing in list)
         {
             var compRottable = thing.TryGetComp<CompRottable>();
-            if (compRottable != null)
-            {
-                compRottable.RotProgress = 0f;
-            }
+            compRottable?.RotProgress = 0f;
         }
     }
 }

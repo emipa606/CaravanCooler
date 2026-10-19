@@ -3,7 +3,7 @@ using RimWorld;
 
 namespace CaravanCooler;
 
-public class CaravanInfo
+public static class CaravanInfo
 {
     public static List<TransferableOneWay> transferables = [];
 }
